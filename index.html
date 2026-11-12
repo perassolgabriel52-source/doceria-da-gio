@@ -109,6 +109,29 @@ textarea{width:100%;height:270px;border-radius:16px;border:3px solid var(--or);b
 .tag path:first-child{animation:dr 6s ease-out both,dv 9s 6s ease-in-out infinite alternate}@keyframes dv{to{transform:translateY(-30px)}}
 .tx h3{background:linear-gradient(90deg,var(--or),#ffd36b,var(--or));background-size:200%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:sh2 4s linear infinite}@keyframes sh2{to{background-position:200%}}
 .tile.lit,.card{animation:fl 5s infinite}
+.m.tri{grid-template-columns:repeat(3,minmax(0,1fr));gap:34px;align-items:stretch;bottom:70px}
+.col{background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.12);border-top:8px solid var(--or);border-radius:18px;padding:20px 26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.col:nth-child(2){border-top-color:var(--mg)}
+.col h3{font:400 42px/1.05 Anton,Impact,sans-serif;color:var(--or);text-transform:uppercase}
+.col h3::before{content:attr(data-n);display:block;font:400 28px 'Permanent Marker',cursive;color:var(--mg);margin-bottom:2px}
+.col p{font-size:28px;line-height:1.25;font-weight:500}.col svg{width:100%;height:auto;flex:none}
+.col .st b{font-size:60px}.col .st span{font-size:24px}.col .st{gap:14px}.col .cap{font-size:22px}
+.col .hb{font-size:24px;margin:4px 0}.col .hb span{width:120px}.col .hb i{height:34px;width:calc(var(--v)*2.2px)}.col .hb b{font-size:34px}
+.col .lb{height:104px}.col .lb s{font-size:28px}.col .lb b{font-size:34px}
+.col .card{font-size:24px;padding:12px 18px}.col .chip{font-size:22px;padding:6px 14px}
+.col .bl{padding:10px 14px}.col .bl strong{font-size:32px}.col .bl span{font-size:22px}
+.mt{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:22px;font-weight:500;text-align:center}.mt .ic{width:54px;height:54px}
+.srcb{position:absolute;left:100px;right:100px;bottom:22px;font-size:22px;color:var(--mut)}
+.fin2{position:absolute;left:100px;right:100px;bottom:58px;text-align:center;font:400 46px 'Permanent Marker',cursive;color:var(--or)}.fin2 em{font-style:normal;color:var(--mg)}
+.qq{display:flex;gap:26px;align-items:flex-start;padding:20px 28px;background:rgba(255,255,255,.06);border-left:8px solid var(--or);border-radius:0 14px 14px 0}
+.qq b{font:400 70px/1 Anton,Impact,sans-serif;color:var(--or)}.qq p{font-size:34px;line-height:1.3}
+.refs2{padding:22px 26px;border-radius:16px;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04)}
+.refs2 h3{font:400 40px Anton,Impact,sans-serif;color:var(--mg);text-transform:uppercase;margin-bottom:10px}.refs2 p{font-size:22px;line-height:1.25;margin-bottom:9px;font-weight:500}
+@keyframes bu{to{transform:translateY(-40px) rotate(-8deg);opacity:0}}@keyframes bd{to{transform:translateY(40px) rotate(8deg);opacity:0}}
+.m.on .bk1{animation:dr 1s var(--d) both,bu 1s 3.6s forwards}.m.on .bk2{animation:dr 1s var(--d) both,bd 1s 3.6s forwards}
+.col h3{font-size:46px}.col p{font-size:31px}.col .cap{font-size:25px}.col .st span{font-size:27px}.col .st b{font-size:66px}.mt{font-size:25px}.mt .ic{width:64px;height:64px}
+.col .bl span{font-size:25px}.col .bl strong{font-size:36px}.col .card{font-size:27px}.col .chip{font-size:25px}.col .hb{font-size:27px}.col .lb s{font-size:31px}.col .lb b{font-size:38px}.srcb{font-size:24px}
+.qq p{font-size:40px}.qq b{font-size:84px}.qq{padding:26px 30px}.m .tx .qq+.qq{margin-top:4px}
 </style>
 </head>
 <body>
@@ -151,295 +174,229 @@ textarea{width:100%;height:270px;border-radius:16px;border:3px solid var(--or);b
 
 <!-- 2 REGISON -->
 <section class="slide" data-badge="Apresenta · <b>Regison</b>">
-<div class="hd"><h2>A periferia e os jovens</h2><div class="tabs"><span>1</span><span>2</span><span>3</span></div></div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">O que é periferia?</h3>
-  <p class="a">Conceito <b>social</b>, não só distância no mapa: longe das melhores estruturas urbanas, ligada à falta de serviços — e <b>cheia de cultura e vida própria</b>.</p>
-  <div class="st a"><b class="c" data-to="12348">0</b><span>favelas e comunidades urbanas em 656 municípios</span></div>
-  <div class="st a"><b class="c" data-to="16390815">0</b><span>moradores</span></div>
-  <div class="src a">Fonte: IBGE, Censo Demográfico 2022</div>
- </div>
- <div class="vis">
-  <svg viewBox="0 0 840 470">
-   <g transform="translate(215 250)">
-    <circle class="a fz" r="195" fill="rgba(255,46,147,.14)" stroke="#ff2e93" stroke-width="4" stroke-dasharray="14 10" style="--d:.3s"/>
-    <circle class="a fz" r="128" fill="rgba(255,176,32,.12)" stroke="#ffb020" stroke-width="3" style="--d:.7s"/>
-    <circle class="a fz" r="58" fill="#ffb020" style="--d:1.1s"/>
-    <text class="a ff" style="--d:1.4s" y="9" text-anchor="middle" font-size="24" font-weight="700" fill="#111">CENTRO</text>
-    <text class="a ff" style="--d:1.4s" y="-205" text-anchor="middle" font-size="24" font-weight="700" fill="#ff2e93">PERIFERIA</text>
+<div class="hd"><h2>A periferia e os jovens</h2></div>
+<div class="m tri">
+ <div class="col a" style="--d:.3s">
+  <h3 data-n="01">O que é periferia?</h3>
+  <p>Conceito <b>social</b>, não só distância no mapa: longe da estrutura, mas <b>cheia de cultura</b>.</p>
+  <svg viewBox="0 0 500 270">
+   <g transform="translate(125 145)">
+    <circle class="a fz" r="118" fill="rgba(255,46,147,.14)" stroke="#ff2e93" stroke-width="3" stroke-dasharray="12 8" style="--d:.8s"/>
+    <circle class="a fz" r="84" fill="rgba(255,176,32,.12)" stroke="#ffb020" stroke-width="3" style="--d:1s"/>
+    <circle class="a fz" r="50" fill="#ffb020" style="--d:1.2s"/>
+    <text y="8" text-anchor="middle" font-size="22" font-weight="700" fill="#111">CENTRO</text>
+    <text y="-125" text-anchor="middle" font-size="22" font-weight="700" fill="#ff2e93">PERIFERIA</text>
    </g>
-   <g transform="translate(470 30) scale(.85)">
-    <path class="a fz" style="--d:1.2s" d="M170 10L240 6 290 30 350 60 395 110 370 150 340 175 345 215 310 260 285 320 240 385 205 400 185 350 150 315 110 295 80 250 30 215 10 160 55 130 95 95 120 45z" fill="rgba(255,176,32,.12)" stroke="#ffb020" stroke-width="4" stroke-linejoin="round"/>
-    <g fill="#ff2e93"><circle cx="300" cy="120" r="9" style="animation:pu 2s infinite"/><circle cx="330" cy="170" r="9" style="animation:pu 2s .4s infinite"/><circle cx="250" cy="250" r="9" style="animation:pu 2s .8s infinite"/><circle cx="215" cy="170" r="9" style="animation:pu 2s 1.2s infinite"/><circle cx="130" cy="210" r="9" style="animation:pu 2s 1.6s infinite"/><circle cx="215" cy="330" r="9" style="animation:pu 2s .2s infinite"/></g>
-   </g>
-   <text class="a ff" style="--d:1.8s" x="640" y="415" text-anchor="middle" font-size="22" fill="#9aa6c6">Brasil · mapa esquemático</text>
+   <g transform="translate(270 20) scale(.55)"><path class="a fz" style="--d:1.2s" d="M170 10L240 6 290 30 350 60 395 110 370 150 340 175 345 215 310 260 285 320 240 385 205 400 185 350 150 315 110 295 80 250 30 215 10 160 55 130 95 95 120 45z" fill="rgba(255,176,32,.12)" stroke="#ffb020" stroke-width="6" stroke-linejoin="round"/>
+    <g fill="#ff2e93"><circle cx="300" cy="120" r="13" style="animation:pu 2s infinite"/><circle cx="250" cy="250" r="13" style="animation:pu 2s .6s infinite"/><circle cx="130" cy="210" r="13" style="animation:pu 2s 1.2s infinite"/></g></g>
   </svg>
-  <div class="cap a" style="--d:1.6s">Moradores de favelas na população do país</div>
-  <div class="hb"><span>2010</span><i class="a gx mgc" style="--v:60;--d:2s"></i><b class="c a ff" data-d="2200" data-to="6" data-dec="1" data-suf="%" style="--d:2s">0</b></div>
-  <div class="hb"><span>2022</span><i class="a gx" style="--v:81;--d:2.4s"></i><b class="c a ff" data-d="2600" data-to="8.1" data-dec="1" data-suf="%" style="--d:2.4s">0</b></div>
+  <div class="st"><b class="g c" data-to="6" data-dec="1" data-suf="%" data-d="1500">0</b><b>→</b><b class="c" data-to="8.1" data-dec="1" data-suf="%" data-d="1900">0</b></div>
+  <div class="cap">da população vive em favelas (2010 → 2022): 12.348 favelas, 656 municípios, 16.390.815 moradores.</div>
  </div>
-</div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">Como vivem os jovens na periferia</h3>
-  <p class="a">Estudam, trabalham, criam — e fazem da rua um <b>território de convivência</b>.</p>
-  <div class="st a"><b class="c" data-to="30">0</b><span>anos de idade mediana nas favelas</span></div>
-  <div class="st a"><b class="g c" data-to="35">0</b><span>anos no país: população mais jovem</span></div>
-  <div class="st a"><b class="k c" data-to="72.9" data-dec="1" data-suf="%">0</b><span>dos moradores são negros (pretos e pardos)</span></div>
-  <div class="src a">Fontes: IBGE, Censo 2022; Brasil de Fato (a partir do IBGE)</div>
- </div>
- <div class="vis">
-  <div class="mk a fl" style="font-size:40px;color:var(--mg)">um dia na quebrada</div>
-  <div class="grid" style="grid-template-columns:repeat(4,1fr)">
-   <div class="tile a fz" style="--d:.6s"><svg class="ic"><use href="#school"/></svg><b>Escola</b></div>
-   <div class="tile a fz" style="--d:1s"><svg class="ic"><use href="#bus"/></svg><b>Ônibus</b></div>
-   <div class="tile a fz" style="--d:1.4s"><svg class="ic"><use href="#work"/></svg><b>Trabalho</b></div>
-   <div class="tile a fz" style="--d:1.8s"><svg class="ic"><use href="#ball"/></svg><b>Quadra</b></div>
-   <div class="tile a fz" style="--d:2.2s"><svg class="ic"><use href="#laje"/></svg><b>Laje</b></div>
-   <div class="tile a fz" style="--d:2.6s"><svg class="ic"><use href="#speaker"/></svg><b>Baile</b></div>
-   <div class="tile a fz" style="--d:3s"><svg class="ic"><use href="#book"/></svg><b>Sarau</b></div>
-   <div class="tile a fz" style="--d:3.4s"><svg class="ic"><use href="#pole"/></svg><b>Rua</b></div>
+ <div class="col a" style="--d:1.5s">
+  <h3 data-n="02">Como vivem os jovens</h3>
+  <p>Estudam, trabalham, criam e ocupam a rua como <b>território de convivência</b>.</p>
+  <div class="grid" style="grid-template-columns:repeat(4,1fr);gap:14px 6px">
+   <div class="mt a fz" style="--d:2s"><svg class="ic"><use href="#school"/></svg>Escola</div>
+   <div class="mt a fz" style="--d:2.2s"><svg class="ic"><use href="#bus"/></svg>Ônibus</div>
+   <div class="mt a fz" style="--d:2.4s"><svg class="ic"><use href="#work"/></svg>Trabalho</div>
+   <div class="mt a fz" style="--d:2.6s"><svg class="ic"><use href="#ball"/></svg>Quadra</div>
+   <div class="mt a fz" style="--d:2.8s"><svg class="ic"><use href="#laje"/></svg>Laje</div>
+   <div class="mt a fz" style="--d:3s"><svg class="ic"><use href="#speaker"/></svg>Baile</div>
+   <div class="mt a fz" style="--d:3.2s"><svg class="ic"><use href="#book"/></svg>Sarau</div>
+   <div class="mt a fz" style="--d:3.4s"><svg class="ic"><use href="#pole"/></svg>Rua</div>
   </div>
+  <div class="st"><b class="c" data-d="3000" data-to="30">0</b><b class="g">×</b><b class="g c" data-d="3300" data-to="35">0</b></div>
+  <div class="cap">anos de idade mediana: favelas × Brasil. Uma população mais jovem.</div>
+  <div class="st"><b class="k c" data-d="3600" data-to="72.9" data-dec="1" data-suf="%">0</b><span>dos moradores são negros</span></div>
+ </div>
+ <div class="col a" style="--d:2.7s">
+  <h3 data-n="03">Falta de oportunidades</h3>
+  <p>Infraestrutura precária e <b>desigualdade entre bairros</b>.</p>
+  <svg viewBox="0 0 500 262">
+   <path d="M10 222H490" stroke="#9aa6c6" stroke-width="3"/>
+   <rect class="a gy" x="30" y="97" width="140" height="125" rx="5" fill="#ff2e93" style="--d:3.2s"/>
+   <rect class="a gy" x="200" y="46" width="140" height="176" rx="5" fill="#ffb020" style="--d:3.8s"/>
+   <text class="a ff c" data-d="3400" data-to="57" x="100" y="86" text-anchor="middle" font-size="44" fill="#ff2e93" style="--d:3.2s;font-family:Anton">0</text>
+   <text class="a ff c" data-d="4000" data-to="80" x="270" y="35" text-anchor="middle" font-size="44" fill="#ffb020" style="--d:3.8s;font-family:Anton">0</text>
+   <text x="100" y="252" text-anchor="middle" font-size="22" font-weight="700" fill="#f3eee3">C. Tiradentes</text>
+   <text x="270" y="252" text-anchor="middle" font-size="22" font-weight="700" fill="#f3eee3">Moema</text>
+   <g class="a ff" style="--d:4.5s"><path d="M200 46H370M170 97H370M362 52V92" stroke="#f3eee3" stroke-dasharray="6 6" stroke-width="2"/><text class="mk" x="374" y="78" font-size="28" fill="#f3eee3">23 anos</text></g>
+  </svg>
+  <div class="cap" style="margin-top:-8px">idade média ao morrer, em São Paulo</div>
+  <div class="st"><b class="c" data-d="4200" data-to="19.2" data-dec="1" data-suf="%">0</b><span>(3,1 milhões) em vias só a pé, de moto ou bicicleta</span></div>
+  <div class="cap">Moema tem 40× mais emprego formal. Também: desemprego e informalidade juvenil, evasão escolar, acesso digital desigual.</div>
  </div>
 </div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">Dificuldades e falta de oportunidades</h3>
-  <div class="st a"><b class="c" data-to="19.2" data-dec="1" data-suf="%">0</b><span>(3,1 milhões) dos moradores de favelas viviam em vias só acessíveis a pé, de moto ou bicicleta</span></div>
-  <div class="st a"><b class="k c" data-to="40" data-suf="×">0</b><span>mais emprego formal em Moema do que na Cidade Tiradentes</span></div>
-  <div class="a"><span class="chip">Desemprego e informalidade juvenil</span><span class="chip">Evasão escolar</span><span class="chip">Acesso digital desigual</span></div>
-  <div class="src a">Fontes: IBGE, Censo 2022; Rede Nossa São Paulo, Mapa da Desigualdade 2019</div>
- </div>
- <svg viewBox="0 0 840 720">
-  <text class="a ff" x="420" y="40" text-anchor="middle" font-size="28" font-weight="700" fill="#f3eee3">Idade média ao morrer · cidade de São Paulo</text>
-  <text class="a ff" x="420" y="74" text-anchor="middle" font-size="22" fill="#9aa6c6">Mapa da Desigualdade, edição 2019</text>
-  <path d="M60 640H780" stroke="#9aa6c6" stroke-width="3"/>
-  <rect class="a gy" x="130" y="321" width="230" height="319" rx="6" fill="#ff2e93" style="--d:.5s"/>
-  <rect class="a gy" x="430" y="192" width="230" height="448" rx="6" fill="#ffb020" style="--d:1.2s"/>
-  <text class="a ff c" data-d="700" data-to="57" x="245" y="300" text-anchor="middle" font-family="Anton" font-size="72" fill="#ff2e93" style="--d:.9s;font-family:Anton">0</text>
-  <text class="a ff c" data-d="1400" data-to="80" x="545" y="172" text-anchor="middle" font-size="72" fill="#ffb020" style="--d:1.6s;font-family:Anton">0</text>
-  <text x="245" y="682" text-anchor="middle" font-size="26" font-weight="700" fill="#f3eee3">Cidade Tiradentes</text>
-  <text x="545" y="682" text-anchor="middle" font-size="26" font-weight="700" fill="#f3eee3">Moema</text>
-  <g class="a ff" style="--d:2.4s"><path d="M430 192H700M360 321H700" stroke="#f3eee3" stroke-dasharray="8 8" stroke-width="2"/><path d="M690 200V313" stroke="#f3eee3" stroke-width="4" marker-end="url(#ar)"/>
-  <text class="mk" x="704" y="268" font-size="36" fill="#f3eee3">23 anos</text></g>
- </svg>
-</div>
+<div class="srcb">Fontes: IBGE, Censo 2022; Agência Brasil; Rede Nossa São Paulo, Mapa da Desigualdade 2019</div>
 </section>
 
 <!-- 3 MAYCOM -->
 <section class="slide" data-badge="Apresenta · <b>Maycom</b>">
-<div class="hd"><h2>Fronteiras culturais e segregação</h2><div class="tabs"><span>1</span><span>2</span><span>3</span></div></div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">O que são fronteiras culturais</h3>
-  <p class="a">Linhas invisíveis entre grupos — jeito de falar, vestir, ouvir e viver — que definem <b>quem “pertence”</b> a cada espaço da cidade.</p>
-  <div class="a"><span class="chip">Física: rua, viaduto, muro</span><span class="chip">Simbólica: preconceito, estigma</span></div>
-  <div class="card a" style="--d:1.6s"><small>Erving Goffman · Estigma, 1963</small>O estigma é o rótulo que reduz uma pessoa a uma marca.</div>
+<div class="hd"><h2>Fronteiras culturais e segregação</h2></div>
+<div class="m tri">
+ <div class="col a" style="--d:.3s">
+  <h3 data-n="01">O que são fronteiras culturais</h3>
+  <p>Linhas invisíveis entre grupos que definem <b>quem “pertence”</b> a cada espaço da cidade.</p>
+  <svg viewBox="0 0 500 250">
+   <g data-b="10,132,60,100;80,92,70,140;150,142,60,90" data-p=".8"></g>
+   <g data-b="290,142,60,90;360,112,70,120;435,152,55,80" data-p=".22"></g>
+   <path d="M10 232H490" stroke="#9aa6c6" stroke-width="3"/>
+   <path class="bk1 dash" d="M250 10V118" stroke="#ff2e93" stroke-width="8" stroke-linecap="round" style="--len:110;--d:.8s"/>
+   <path class="bk2 dash" d="M250 124V232" stroke="#ff2e93" stroke-width="8" stroke-linecap="round" style="--len:110;--d:.8s"/>
+  </svg>
+  <div><span class="chip">Física: rua, viaduto, muro</span><span class="chip">Simbólica: preconceito, estigma</span></div>
+  <div class="cap">Estigma: Erving Goffman, 1963.</div>
  </div>
- <svg viewBox="0 0 840 720">
-  <g data-b="40,420,100,220;150,350,110,290;270,460,100,180" data-p=".8"></g>
-  <g data-b="500,500,100,140;610,420,100,220;720,520,90,120" data-p=".22"></g>
-  <path d="M40 640H800" stroke="#9aa6c6" stroke-width="3"/>
-  <path class="bk1 dash" d="M420 90V365" stroke="#ff2e93" stroke-width="10" stroke-linecap="round" style="--len:280;--d:.6s"/>
-  <path class="bk2 dash" d="M420 375V640" stroke="#ff2e93" stroke-width="10" stroke-linecap="round" style="--len:280;--d:.6s"/>
-  <text class="a ff mk" x="420" y="68" text-anchor="middle" font-size="40" fill="#ff2e93" style="--d:1.6s">fronteira</text>
-  <text class="a ff mk" x="420" y="700" text-anchor="middle" font-size="40" fill="#ffb020" style="--d:4.2s">…e pode ser rompida</text>
- </svg>
+ <div class="col a" style="--d:1.5s">
+  <h3 data-n="02">Preconceito contra a periferia</h3>
+  <p>Suspeita por endereço e cor: preconceito <b>social, racial e territorial</b>.</p>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:14px">
+   <div class="lb a fz" style="--d:2s"><s>Suspeito</s><b>Trabalhador</b></div>
+   <div class="lb a fz" style="--d:2.4s"><s>Perigoso</s><b>Vizinho</b></div>
+   <div class="lb a fz" style="--d:2.8s"><s>Sem futuro</s><b>Artista</b></div>
+   <div class="lb a fz" style="--d:3.2s"><s>Endereço errado</s><b>Estudante</b></div>
+  </div>
+  <div class="card"><small>Violência simbólica · Bourdieu</small>Dominação sem força física, quando a desigualdade parece natural.</div>
+ </div>
+ <div class="col a" style="--d:2.7s">
+  <h3 data-n="03">Desigualdade e exclusão</h3>
+  <p><b>Segregação socioespacial</b>: os pobres são empurrados para longe, com menos serviços e mais tempo de deslocamento.</p>
+  <svg viewBox="0 0 500 250">
+   <g class="a" style="--d:3.2s"><polygon points="110,20 135,74 85,74" fill="#ffb020"/></g>
+   <g class="a" style="--d:3.5s"><polygon points="83,78 137,78 160,128 60,128" fill="#ff8a3d"/></g>
+   <g class="a" style="--d:3.8s"><polygon points="59,132 161,132 185,182 35,182" fill="#f0508a"/></g>
+   <g class="a" style="--d:4.1s"><polygon points="34,186 186,186 210,236 10,236" fill="#ff2e93"/></g>
+   <g transform="translate(385 130)">
+    <circle class="a fz" r="105" fill="rgba(255,46,147,.05)" stroke="#ff2e93" stroke-opacity=".3" stroke-dasharray="8 8" stroke-width="3" style="--d:3.4s"/>
+    <circle class="a fz" r="68" fill="rgba(255,176,32,.05)" stroke="#ffb020" stroke-opacity=".3" stroke-width="3" style="--d:3.7s"/>
+    <circle class="a fz" r="34" fill="#ffb020" style="--d:4s;filter:drop-shadow(0 0 20px #ffb020)"/>
+   </g>
+  </svg>
+  <div class="cap">pirâmide social · centro aceso, periferia apagada</div>
+  <p>Lembra? <b class="mg">57 × 80 anos</b>: mesma cidade, destinos desiguais.</p>
+ </div>
 </div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">Preconceito contra moradores da periferia</h3>
-  <p class="a">Suspeita policial, discriminação por endereço em seleções de emprego, “lugar perigoso”: preconceito <b>social, racial e territorial</b> ao mesmo tempo.</p>
-  <div class="card a" style="--d:1.2s"><small>Violência simbólica · Pierre Bourdieu</small>Dominação que age sem força física, quando a desigualdade parece natural.</div>
- </div>
- <div class="grid" style="grid-template-columns:1fr 1fr">
-  <div class="lb a fz" style="--d:.4s"><s>Suspeito</s><b>Trabalhador</b></div>
-  <div class="lb a fz" style="--d:.9s"><s>Perigoso</s><b>Vizinho</b></div>
-  <div class="lb a fz" style="--d:1.4s"><s>Endereço errado</s><b>Estudante</b></div>
-  <div class="lb a fz" style="--d:1.9s"><s>Sem futuro</s><b>Artista</b></div>
- </div>
-</div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">Desigualdade social e exclusão</h3>
-  <p class="a"><b>Segregação socioespacial</b>: os mais pobres são empurrados para áreas distantes — menos serviços, mais tempo de deslocamento.</p>
-  <p class="a">Lembra de São Paulo? <b class="mg">57 × 80 anos</b>: mesma cidade, destinos desiguais.</p>
- </div>
- <svg viewBox="0 0 840 700">
-  <g class="a" style="--d:.2s"><polygon points="200,100 247.5,220 152.5,220" fill="#ffb020"/></g>
-  <g class="a" style="--d:.5s"><polygon points="150,226 250,226 295,340 105,340" fill="#ff8a3d"/></g>
-  <g class="a" style="--d:.8s"><polygon points="103,346 297,346 342,460 58,460" fill="#f0508a"/></g>
-  <g class="a" style="--d:1.1s"><polygon points="55,466 345,466 390,580 10,580" fill="#ff2e93"/></g>
-  <text class="a ff" style="--d:1.5s" x="200" y="632" text-anchor="middle" font-size="24" fill="#9aa6c6">pirâmide social: renda e acesso</text>
-  <g transform="translate(640 330)">
-   <circle class="a fz" r="185" fill="rgba(255,46,147,.05)" stroke="#ff2e93" stroke-opacity=".3" stroke-dasharray="10 10" stroke-width="3" style="--d:.6s"/>
-   <circle class="a fz" r="120" fill="rgba(255,176,32,.05)" stroke="#ffb020" stroke-opacity=".3" stroke-width="3" style="--d:.9s"/>
-   <circle class="a fz" r="55" fill="#ffb020" style="--d:1.3s;filter:drop-shadow(0 0 28px #ffb020)"/>
-   <text y="9" x="0" text-anchor="middle" font-size="22" font-weight="700" fill="#111">CENTRO</text>
-   <text y="-198" text-anchor="middle" font-size="22" font-weight="700" fill="#ff2e93" opacity=".6">PERIFERIA</text>
-  </g>
-  <text class="a ff" style="--d:1.8s" x="640" y="632" text-anchor="middle" font-size="24" fill="#9aa6c6">centro aceso · periferia apagada</text>
- </svg>
-</div>
+<div class="srcb">Fontes: Goffman, Estigma (1963); Bourdieu, O poder simbólico; IBGE; Rede Nossa São Paulo</div>
 </section>
 
 <!-- 4 VICTOR -->
 <section class="slide" data-badge="Apresenta · <b>Victor</b>">
-<div class="hd"><h2>A violência na periferia</h2><div class="tabs"><span>1</span><span>2</span><span>3</span></div></div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">Causas da violência</h3>
-  <p class="a">A causa é <b>estrutural</b>, não do lugar nem das pessoas.</p>
-  <p class="a">A maioria dos moradores é <b>trabalhadora</b> — e também vítima.</p>
-  <div class="src a">Interpretação sociológica do grupo: causas estruturais, não do lugar nem das pessoas.</div>
+<div class="hd"><h2>A violência na periferia</h2></div>
+<div class="m tri">
+ <div class="col a" style="--d:.3s">
+  <h3 data-n="01">Causas da violência</h3>
+  <p>Causa <b>estrutural</b>, não do lugar nem das pessoas. A maioria é trabalhadora — e também vítima.</p>
+  <svg viewBox="0 0 500 282"><defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5 0 10z" fill="#ffb020"/></marker></defs>
+   <g font-size="24" font-weight="700" text-anchor="middle" fill="#f3eee3">
+   <rect class="a fl" x="40" y="0" width="420" height="40" rx="10" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="2" style="--d:.8s"/><text class="a ff" x="250" y="28" style="--d:.9s">Desigualdade social</text>
+   <path class="dash" d="M250 42V58" stroke="#ffb020" stroke-width="3" marker-end="url(#ar2)" style="--len:20;--d:1s"/>
+   <rect class="a fr" x="40" y="60" width="420" height="40" rx="10" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="2" style="--d:1.2s"/><text class="a ff" x="250" y="88" style="--d:1.3s">Falta de oportunidades</text>
+   <path class="dash" d="M250 102V118" stroke="#ffb020" stroke-width="3" marker-end="url(#ar2)" style="--len:20;--d:1.4s"/>
+   <rect class="a fl" x="40" y="120" width="420" height="40" rx="10" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="2" style="--d:1.6s"/><text class="a ff" x="250" y="148" style="--d:1.7s">Estado ausente ou seletivo</text>
+   <path class="dash" d="M250 162V178" stroke="#ffb020" stroke-width="3" marker-end="url(#ar2)" style="--len:20;--d:1.8s"/>
+   <rect class="a fr" x="40" y="180" width="420" height="40" rx="10" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="2" style="--d:2s"/><text class="a ff" x="250" y="208" style="--d:2.1s">Mercado ilegal recruta jovens</text>
+   <path class="dash" d="M250 222V238" stroke="#ff2e93" stroke-width="3" marker-end="url(#ar2)" style="--len:20;--d:2.2s"/>
+   <rect class="a fz" x="40" y="240" width="420" height="42" rx="10" fill="rgba(255,46,147,.22)" stroke="#ff2e93" stroke-width="3" style="--d:2.4s"/><text class="a ff" x="250" y="269" style="--d:2.5s">Violência: consequência</text>
+   </g>
+  </svg>
  </div>
- <svg viewBox="0 0 840 720">
-  <g font-size="30" font-weight="700" text-anchor="middle">
-  <rect class="a fl" x="100" y="20" width="640" height="90" rx="16" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3" style="--d:.2s"/><text class="a ff" x="420" y="76" fill="#f3eee3" style="--d:.4s">Desigualdade social</text>
-  <path class="dash" d="M420 114V150" stroke="#ffb020" stroke-width="5" marker-end="url(#ar)" style="--len:50;--d:.8s"/>
-  <rect class="a fr" x="100" y="156" width="640" height="90" rx="16" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3" style="--d:1s"/><text class="a ff" x="420" y="212" fill="#f3eee3" style="--d:1.2s">Falta de oportunidades</text>
-  <path class="dash" d="M420 250V286" stroke="#ffb020" stroke-width="5" marker-end="url(#ar)" style="--len:50;--d:1.6s"/>
-  <rect class="a fl" x="100" y="292" width="640" height="90" rx="16" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3" style="--d:1.8s"/><text class="a ff" x="420" y="348" fill="#f3eee3" style="--d:2s">Estado ausente ou seletivo</text>
-  <path class="dash" d="M420 386V422" stroke="#ffb020" stroke-width="5" marker-end="url(#ar)" style="--len:50;--d:2.4s"/>
-  <rect class="a fr" x="100" y="428" width="640" height="90" rx="16" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3" style="--d:2.6s"/><text class="a ff" x="420" y="484" fill="#f3eee3" style="--d:2.8s">Mercado ilegal recruta jovens</text>
-  <path class="dash" d="M420 522V558" stroke="#ff2e93" stroke-width="5" marker-end="url(#ar)" style="--len:50;--d:3.2s"/>
-  <rect class="a fz" x="100" y="564" width="640" height="120" rx="16" fill="rgba(255,46,147,.2)" stroke="#ff2e93" stroke-width="4" style="--d:3.4s"/><text class="a ff" x="420" y="618" font-size="38" fill="#f3eee3" style="--d:3.6s">Violência</text><text class="a ff" x="420" y="658" font-size="24" font-weight="500" fill="#9aa6c6" style="--d:3.8s">consequência das desigualdades, não destino</text>
-  </g>
- </svg>
+ <div class="col a" style="--d:1.5s">
+  <h3 data-n="02">Como afeta os jovens</h3>
+  <div class="st"><b class="c" data-d="2000" data-to="301825">0</b></div>
+  <div class="cap" style="font-size:24px">jovens de 15 a 29 anos assassinados de 2014 a 2024: cerca de 75 por dia.</div>
+  <div class="st"><b class="g c" data-d="2500" data-to="19801">0</b></div>
+  <div class="cap" style="font-size:24px">em 2024, taxa de 42,2 por 100 mil.</div>
+  <div class="cap" style="font-size:24px;color:var(--tx)">Homicídios por 100 mil, em 2022:</div>
+  <div class="hb"><span>Negros</span><i class="a gx" style="--v:100;--d:3s"></i><b class="c a ff" data-d="3200" data-to="29.7" data-dec="1" style="--d:3s">0</b></div>
+  <div class="hb"><span>Não negros</span><i class="a gx sl" style="--v:36;--d:3.4s"></i><b class="c a ff" data-d="3600" data-to="10.8" data-dec="1" style="--d:3.4s">0</b></div>
+  <div class="st"><b class="k c" data-d="4000" data-to="76.5" data-dec="1" data-suf="%">0</b><span>das vítimas eram negras</span></div>
+ </div>
+ <div class="col a" style="--d:2.7s">
+  <h3 data-n="03">Educação e projetos sociais</h3>
+  <p>Educação, cultura, esporte e projetos comunitários <b>protegem</b> e abrem caminhos.</p>
+  <svg viewBox="0 0 545 250">
+   <rect x="0" y="190" width="110" height="24" fill="#1b2340"/>
+   <g data-b="6,120,40,70;52,150,34,40" data-p=".6"></g>
+   <path class="dash" d="M110 190H280" stroke="#ffb020" stroke-width="7" style="--len:180;--d:3.2s"/>
+   <path class="dash" d="M110 190Q195 100 280 190" fill="none" stroke="#ffb020" stroke-width="4" style="--len:240;--d:3.5s"/>
+   <path class="dash" d="M280 190C320 190 300 40 336 40M280 190C320 190 320 125 336 125M280 190C310 190 320 210 336 210" fill="none" stroke="#ff2e93" stroke-width="4" style="--len:300;--d:4s"/>
+   <g class="a fz" style="--d:4.6s"><circle cx="370" cy="40" r="32" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3"/><use href="#book" x="348" y="18" width="44" height="44" color="#ffb020"/><text x="412" y="48" font-size="24" font-weight="700" fill="#f3eee3">Escola</text></g>
+   <g class="a fz" style="--d:4.9s"><circle cx="370" cy="125" r="32" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3"/><use href="#work" x="348" y="103" width="44" height="44" color="#ffb020"/><text x="412" y="133" font-size="24" font-weight="700" fill="#f3eee3">Trabalho</text></g>
+   <g class="a fz" style="--d:5.2s"><circle cx="370" cy="210" r="32" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3"/><use href="#spray" x="348" y="188" width="44" height="44" color="#ffb020"/><text x="412" y="218" font-size="24" font-weight="700" fill="#f3eee3">Cultura</text></g>
+   <text x="55" y="240" text-anchor="middle" font-size="22" font-weight="700" fill="#ff2e93">PERIFERIA</text>
+  </svg>
+  <div class="cap" style="font-size:24px;color:var(--tx)">Exemplos reais:</div>
+  <div><span class="chip">Casa do Zezinho</span><span class="chip">CUFA</span><span class="chip">Observatório de Favelas</span></div>
+ </div>
 </div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">Como a violência afeta os jovens</h3>
-  <div class="st a"><b class="c" data-to="301825">0</b><span>jovens de 15 a 29 anos assassinados entre 2014 e 2024 — cerca de 75 por dia</span></div>
-  <div class="st a"><b class="g c" data-to="19801">0</b><span>em 2024 · taxa de 42,2 por 100 mil</span></div>
-  <div class="src a">Fonte: Atlas da Violência 2026 (Ipea e FBSP)</div>
- </div>
- <div class="vis">
-  <div class="cap a">Taxa de homicídios por 100 mil · dados de 2022</div>
-  <div class="hb"><span>Negros</span><i class="a gx" style="--v:100;--d:.5s"></i><b class="c a ff" data-d="700" data-to="29.7" data-dec="1" style="--d:.5s">0</b></div>
-  <div class="hb"><span>Não negros</span><i class="a gx sl" style="--v:36;--d:1s"></i><b class="c a ff" data-d="1200" data-to="10.8" data-dec="1" style="--d:1s">0</b></div>
-  <div class="st a" style="--d:1.8s;margin-top:20px"><b class="k c" data-d="1900" data-to="76.5" data-dec="1" data-suf="%">0</b><span>das vítimas de homicídio eram negras</span></div>
-  <div class="src a" style="--d:1.8s">Fonte: Atlas da Violência 2024 (Ipea e FBSP)</div>
- </div>
-</div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">A importância da educação e dos projetos sociais</h3>
-  <p class="a">Educação, cultura, esporte e projetos comunitários <b>protegem</b> e abrem caminhos de oportunidade.</p>
-  <div class="cap a">Exemplos reais de projetos:</div>
-  <div class="a"><span class="chip">Casa do Zezinho (SP)</span><span class="chip">CUFA — Central Única das Favelas</span><span class="chip">Observatório de Favelas</span></div>
- </div>
- <svg viewBox="0 0 840 720">
-  <rect x="0" y="560" width="230" height="60" fill="#1b2340"/>
-  <g data-b="14,440,80,120;104,480,66,80;178,420,52,140" data-p=".6"></g>
-  <text x="115" y="665" text-anchor="middle" font-size="26" font-weight="700" fill="#ff2e93">PERIFERIA</text>
-  <path class="dash" d="M230 560H520" stroke="#ffb020" stroke-width="10" style="--len:300;--d:.4s"/>
-  <path class="dash" d="M230 560Q375 340 520 560" fill="none" stroke="#ffb020" stroke-width="5" style="--len:420;--d:.8s"/>
-  <path class="a ff" style="--d:1.6s" d="M290 560V460M330 560V420M375 560V400M420 560V420M460 560V460" stroke="#ffb020" stroke-width="3"/>
-  <path class="dash" d="M520 560C590 560 570 130 636 130M520 560C590 560 590 350 636 350M520 560C580 560 590 570 636 570" fill="none" stroke="#ff2e93" stroke-width="5" style="--len:600;--d:2s"/>
-  <g class="a fz" style="--d:2.8s"><circle cx="700" cy="130" r="62" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3"/><use href="#book" x="660" y="90" width="80" height="80" color="#ffb020"/><text x="700" y="230" text-anchor="middle" font-size="26" font-weight="700" fill="#f3eee3">Escola</text></g>
-  <g class="a fz" style="--d:3.2s"><circle cx="700" cy="350" r="62" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3"/><use href="#work" x="660" y="310" width="80" height="80" color="#ffb020"/><text x="700" y="450" text-anchor="middle" font-size="26" font-weight="700" fill="#f3eee3">Trabalho</text></g>
-  <g class="a fz" style="--d:3.6s"><circle cx="700" cy="570" r="62" fill="rgba(255,176,32,.15)" stroke="#ffb020" stroke-width="3"/><use href="#spray" x="660" y="530" width="80" height="80" color="#ffb020"/><text x="700" y="670" text-anchor="middle" font-size="26" font-weight="700" fill="#f3eee3">Cultura</text></g>
- </svg>
-</div>
+<div class="srcb">Fontes: Atlas da Violência 2026 (Ipea e FBSP); Atlas da Violência 2024; interpretação sociológica do grupo</div>
 </section>
 
 <!-- 5 ALLIFY -->
 <section class="slide" data-badge="Apresenta · <b>Allify</b>">
-<div class="hd"><h2>A resistência do jovem periférico<small>por meio da linguagem</small></h2><div class="tabs"><span>1</span><span>2</span><span>3</span></div></div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">Rap, funk e grafite</h3>
-  <p class="a">Hip hop: nasce no <b>Bronx</b> (Nova York) nos anos 1970 e chega a São Paulo nos anos 1980 — Largo São Bento e Rua 24 de Maio.</p>
-  <p class="a"><b>Racionais MC’s</b>: marco do rap brasileiro (faixa “Periferia é periferia em qualquer lugar”).</p>
-  <p class="a"><b>Funk</b>: cultura de baile e identidade das favelas. <b>Grafite</b>: arte que ocupa o muro.</p>
-  <div class="src a">Fontes: Brasil de Fato (2026); Revista Pesquisa FAPESP</div>
+<div class="hd"><h2>A resistência do jovem periférico<small>por meio da linguagem</small></h2></div>
+<div class="m tri" style="bottom:120px">
+ <div class="col a" style="--d:.3s">
+  <h3 data-n="01">Rap, funk e grafite</h3>
+  <p>Hip hop nasce no <b>Bronx</b> (anos 1970) e chega a São Paulo nos anos 1980: Largo São Bento e Rua 24 de Maio.</p>
+  <div class="grid" style="grid-template-columns:repeat(4,1fr);gap:6px">
+   <div class="mt a lit" style="--d:1s"><svg class="ic"><use href="#mic"/></svg>Rap</div>
+   <div class="mt a lit" style="--d:1.4s"><svg class="ic"><use href="#vinyl"/></svg>DJ</div>
+   <div class="mt a lit" style="--d:1.8s"><svg class="ic"><use href="#dance"/></svg>Breaking</div>
+   <div class="mt a lit" style="--d:2.2s"><svg class="ic"><use href="#spray"/></svg>Grafite</div>
+  </div>
+  <p><b>Racionais MC’s</b>: marco do rap brasileiro. <b>Funk</b>: baile e identidade das favelas.</p>
  </div>
- <div class="grid" style="grid-template-columns:1fr 1fr">
-  <div class="tile a lit" style="--d:.5s"><svg class="ic"><use href="#mic"/></svg><b>Rap</b><span>o MC e a palavra</span></div>
-  <div class="tile a lit" style="--d:1.4s"><svg class="ic"><use href="#vinyl"/></svg><b>DJ</b><span>som e vinil</span></div>
-  <div class="tile a lit" style="--d:2.3s"><svg class="ic"><use href="#dance"/></svg><b>Breaking</b><span>dança de rua</span></div>
-  <div class="tile a lit" style="--d:3.2s"><svg class="ic"><use href="#spray"/></svg><b>Grafite</b><span>arte no muro</span></div>
+ <div class="col a" style="--d:1.5s">
+  <h3 data-n="02">Gírias e identidade</h3>
+  <p>Código de <b>pertencimento</b>, criatividade e resistência.</p>
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:22px 12px">
+   <div class="bl a fz" style="--d:2s"><strong>mano</strong><span>amigo, parceiro</span></div>
+   <div class="bl a fz" style="--d:2.5s"><strong>quebrada</strong><span>o bairro, de onde se vem</span></div>
+   <div class="bl a fz" style="--d:3s"><strong>firmeza</strong><span>está tudo certo</span></div>
+   <div class="bl a fz" style="--d:3.5s"><strong>trampo</strong><span>trabalho</span></div>
+   <div class="bl a fz" style="--d:4s"><strong>rolê</strong><span>passeio com a turma</span></div>
+   <div class="bl a fz" style="--d:4.5s"><strong>da hora</strong><span>muito legal</span></div>
+  </div>
+ </div>
+ <div class="col a" style="--d:2.7s">
+  <h3 data-n="03">A linguagem mostra a realidade</h3>
+  <p>Rap, funk e grafite são o <b>jornal da quebrada</b>: denunciam a desigualdade e afirmam o orgulho. Quem estava calado <b class="mg">ganha voz</b>.</p>
+  <svg viewBox="0 0 500 250">
+   <defs><pattern id="br" width="70" height="36" patternUnits="userSpaceOnUse"><rect width="70" height="36" fill="#2a2433"/><path d="M0 0H70M0 18H70M35 0V18M0 18V36M70 18V36" stroke="#15111c" stroke-width="3"/></pattern></defs>
+   <rect class="a ff" width="500" height="250" rx="12" fill="url(#br)" style="--d:3.2s"/>
+   <g transform="rotate(-4 250 125)" class="mk" text-anchor="middle">
+    <text class="a sp" x="250" y="115" font-size="68" fill="#ff2e93" style="--d:3.6s;letter-spacing:0">A QUEBRADA</text>
+    <text class="a sp" x="250" y="195" font-size="84" fill="#ffb020" style="--d:4.4s;letter-spacing:0">TEM VOZ</text>
+    <rect class="a gy" x="90" y="122" width="6" height="30" rx="3" fill="#ff2e93" style="--d:5s;transform-origin:50% 0!important"/><rect class="a gy" x="300" y="202" width="6" height="28" rx="3" fill="#ffb020" style="--d:5.3s;transform-origin:50% 0!important"/>
+   </g>
+  </svg>
  </div>
 </div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">Gírias e identidade cultural</h3>
-  <p class="a">Gíria é <b>código de pertencimento</b>, criatividade e resistência.</p>
-
- </div>
- <div class="grid" style="grid-template-columns:1fr 1fr;gap:26px 22px;align-content:center">
-  <div class="bl a fz" style="--d:.5s"><strong>mano</strong><span>amigo, parceiro</span></div>
-  <div class="bl a fz" style="--d:1.4s"><strong>quebrada</strong><span>o bairro, o lugar de onde se vem</span></div>
-  <div class="bl a fz" style="--d:2.3s"><strong>firmeza</strong><span>está tudo certo</span></div>
-  <div class="bl a fz" style="--d:3.2s"><strong>trampo</strong><span>trabalho</span></div>
-  <div class="bl a fz" style="--d:4.1s"><strong>rolê</strong><span>passeio, saída com a turma</span></div>
-  <div class="bl a fz" style="--d:5s"><strong>da hora</strong><span>muito legal</span></div>
- </div>
-</div>
-<div class="m">
- <div class="tx">
-  <h3 class="a">A linguagem mostra a realidade</h3>
-  <p class="a">Rap, funk e grafite são o <b>jornal da quebrada</b>: denunciam desigualdade, preconceito e violência e afirmam o orgulho do território.</p>
-  <p class="a">Quem estava calado <b class="mg">ganha voz</b>.</p>
-  <p class="a mk" style="font-size:44px;line-height:1.2;color:var(--or);--d:2.6s">Onde a cidade ergue muros, a quebrada constrói pontes.</p>
- </div>
- <svg viewBox="0 0 840 700">
-  <defs><pattern id="br" width="120" height="60" patternUnits="userSpaceOnUse"><rect width="120" height="60" fill="#2a2433"/><path d="M0 0H120M0 30H120M60 0V30M0 30V60M120 30V60" stroke="#15111c" stroke-width="4"/></pattern></defs>
-  <rect class="a ff" width="840" height="700" rx="14" fill="url(#br)"/>
-  <g transform="rotate(-4 420 330)" class="mk" text-anchor="middle">
-   <text class="a sp" x="420" y="290" font-size="116" fill="#ff2e93" style="--d:.8s;letter-spacing:0">A QUEBRADA</text>
-   <text class="a sp" x="420" y="450" font-size="150" fill="#ffb020" style="--d:1.8s;letter-spacing:0">TEM VOZ</text>
-   <g fill="#ff2e93"><rect class="a gy" x="150" y="300" width="9" height="70" rx="4" style="--d:2.2s;transform-origin:50% 0!important"/><rect class="a gy" x="430" y="300" width="9" height="50" rx="4" style="--d:2.5s"/></g>
-   <g fill="#ffb020"><rect class="a gy" x="300" y="462" width="10" height="80" rx="5" style="--d:3s"/><rect class="a gy" x="560" y="462" width="10" height="55" rx="5" style="--d:3.3s"/></g>
-  </g>
-  <use class="a fz" style="--d:3.4s" href="#spray" x="40" y="580" width="90" height="90" color="#ff2e93"/>
- </svg>
-</div>
+<div class="fin2 a s" style="--d:5.2s">Onde a cidade ergue <em>muros</em>, a quebrada constrói <em>pontes</em>.</div>
+<div class="srcb">Fontes: Brasil de Fato (2026); Revista Pesquisa FAPESP</div>
 </section>
 
-<!-- 7 Q1 -->
-<section class="slide" data-badge="Perguntas finais">
-<div class="hd"><h2>Perguntas</h2><div class="tabs"><span>1</span><span>2</span><span>3</span><span>4</span></div></div>
-<div class="m one">
- <div class="q" id="q1">
-  <h3 class="a">Segundo o Censo 2022 do IBGE, qual é a porcentagem aproximada da população brasileira que vive em favelas e comunidades urbanas?</h3>
-  <div class="opts">
-   <button class="opt a fz"><i class="bx"></i><strong>a)</strong> 2%</button>
-   <button class="opt a fz" data-ok><i class="bx"></i><strong>b)</strong> 8,1%</button>
-   <button class="opt a fz"><i class="bx"></i><strong>c)</strong> 20%</button>
-   <button class="opt a fz"><i class="bx"></i><strong>d)</strong> 35%</button>
-  </div>
-  <div class="gab"><span class="ok">✔ Acertou! </span><span class="no">✖ Quase! </span>Gabarito: <b>b)</b> — o Censo 2022 contou 16,4 milhões de moradores, 8,1% da população.</div>
+<!-- 6 QUESTÕES -->
+<section class="slide" data-badge="Atividade · copie no caderno">
+<div class="hd"><h2>Questões para o caderno</h2></div>
+<div class="m" style="grid-template-columns:1.7fr 1fr;align-items:start;top:140px;gap:50px">
+ <div class="tx" style="gap:20px">
+  <div class="qq a"><b>1</b><p>Segundo o Censo 2022 do IBGE, qual é a porcentagem aproximada da população brasileira que vive em favelas e comunidades urbanas?</p></div>
+  <div class="qq a"><b>2</b><p>No contexto do trabalho, o que são “fronteiras culturais”?</p></div>
+  <div class="qq a"><b>3</b><p>Explique, com suas palavras, como a educação e a cultura (rap, funk, grafite) podem ajudar a enfrentar a segregação e a violência que atingem os jovens da periferia.</p></div>
  </div>
-<div class="m one">
- <div class="q">
-  <h3 class="a">No contexto do trabalho, o que são “fronteiras culturais”?</h3>
-  <div class="opts">
-   <button class="opt a fz"><i class="bx"></i><span><strong>a)</strong> Limites oficiais entre países</span></button>
-   <button class="opt a fz" data-ok><i class="bx"></i><span><strong>b)</strong> Barreiras simbólicas e sociais que separam grupos por jeito de viver, falar e consumir cultura</span></button>
-   <button class="opt a fz"><i class="bx"></i><span><strong>c)</strong> Linhas de ônibus entre cidades</span></button>
-   <button class="opt a fz"><i class="bx"></i><span><strong>d)</strong> Regras de trânsito nos bairros</span></button>
-  </div>
-  <div class="gab"><span class="ok">✔ Acertou! </span><span class="no">✖ Quase! </span>Gabarito: <b>b)</b> — são limites simbólicos e sociais, não oficiais nem físicos.</div>
- </div>
-<div class="m one">
- <div class="q">
-  <h3 class="a">Explique, com suas palavras, como a educação e a cultura (rap, funk, grafite) podem ajudar a enfrentar a segregação e a violência que atingem os jovens da periferia.</h3>
-  <textarea class="a" placeholder="Escreva sua resposta aqui…"></textarea>
-  <button class="btn a" id="mbtn">Ver resposta-modelo</button>
-  <div class="mod" id="mod">A educação amplia as chances de estudo e trabalho, e projetos sociais criam espaços seguros de convivência. A cultura — rap, funk e grafite — transforma a vivência da periferia em voz própria: denuncia o preconceito e a desigualdade e fortalece o orgulho do território. Assim, derruba fronteiras simbólicas, reduz o estigma e abre pontes para o resto da cidade. Com oportunidade e voz, a segregação perde força, e a violência — consequência de desigualdades e da ausência de direitos — deixa de ser o único caminho visível.</div>
- </div>
-<div class="m one">
- <div class="refs">
-  <p class="a">IBGE. <b>Censo Demográfico 2022</b>: favelas e comunidades urbanas. Rio de Janeiro: IBGE, 2024.</p>
-  <p class="a">IPEA; FBSP. <b>Atlas da Violência 2024</b>. Brasília: Ipea; Fórum Brasileiro de Segurança Pública, 2024. <b>Atlas da Violência 2026</b>. Brasília, 2026.</p>
-  <p class="a">REDE NOSSA SÃO PAULO. <b>Mapa da Desigualdade</b>. São Paulo, 2019.</p>
-  <p class="a">BRASIL DE FATO. <b>Brasil tem 16 milhões de pessoas vivendo em favelas; 72,9% são negros</b>. 8 nov. 2024. AGÊNCIA BRASIL. <b>População de favela é mais negra e jovem que restante do país</b>. Nov. 2024.</p>
-  <p class="a">GOFFMAN, Erving. <b>Estigma</b>: notas sobre a manipulação da identidade deteriorada. Rio de Janeiro: LTC, 2004 (original de 1963).</p>
-  <p class="a">BOURDIEU, Pierre. <b>O poder simbólico</b>. Rio de Janeiro: Bertrand Brasil, 1989.</p>
-  <p class="a">BRASIL DE FATO. <b>Hip hop tem raízes no centro da capital paulista</b>. 14 mar. 2026. REVISTA PESQUISA FAPESP. Reportagem sobre a história do hip hop.</p>
+ <div class="refs2 a">
+  <h3>Referências</h3>
+  <p>IBGE. <b>Censo Demográfico 2022</b>: favelas e comunidades urbanas. Rio de Janeiro: IBGE, 2024.</p>
+  <p>IPEA; FBSP. <b>Atlas da Violência 2024</b>. Brasília, 2024. <b>Atlas da Violência 2026</b>. Brasília, 2026.</p>
+  <p>REDE NOSSA SÃO PAULO. <b>Mapa da Desigualdade</b>. São Paulo, 2019.</p>
+  <p>BRASIL DE FATO. <b>Brasil tem 16 milhões de pessoas vivendo em favelas; 72,9% são negros</b>. 8 nov. 2024.</p>
+  <p>AGÊNCIA BRASIL. <b>População de favela é mais negra e jovem que restante do país</b>. Nov. 2024.</p>
+  <p>GOFFMAN, Erving. <b>Estigma</b>. Rio de Janeiro: LTC, 2004 (original de 1963).</p>
+  <p>BOURDIEU, Pierre. <b>O poder simbólico</b>. Rio de Janeiro: Bertrand Brasil, 1989.</p>
+  <p>BRASIL DE FATO. <b>Hip hop tem raízes no centro da capital paulista</b>. 14 mar. 2026.</p>
  </div>
 </div>
 </section>
@@ -493,10 +450,6 @@ addEventListener('keydown',e=>{if(e.target.matches('textarea')||e.ctrlKey||e.met
 stage.addEventListener('click',e=>{if(e.target.closest('button,textarea'))return;const r=stage.getBoundingClientRect();(e.clientX-r.left)<r.width*.18?prev():next()});
 let tx=0;addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});
 addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>60)d<0?next():prev()});
-/* quiz */
-$$('.q').forEach(q=>$$('.opt',q).forEach(b=>b.onclick=()=>{if(q.dataset.done)return;q.dataset.done=1;const ok=b.hasAttribute('data-ok');
- b.classList.add('sel',ok?'good':'bad');if(!ok)$('.opt[data-ok]',q).classList.add('good');q.classList.add('ans',ok?'right':'wrong')}));
-$('#mbtn').onclick=()=>$('#mod').classList.toggle('show');
 go(Math.max(0,Math.min(S.length-1,(parseInt(location.hash.slice(1))||1)-1)),0);
 </script>
 </body>
