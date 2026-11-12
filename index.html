@@ -106,6 +106,9 @@ textarea{width:100%;height:270px;border-radius:16px;border:3px solid var(--or);b
 #pg i{position:absolute;inset:0;width:0;background:linear-gradient(90deg,var(--or),var(--mg));transition:width .6s}
 .cnt{position:absolute;right:60px;bottom:30px;font-size:22px;color:var(--mut);z-index:40}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}}
+.tag path:first-child{animation:dr 6s ease-out both,dv 9s 6s ease-in-out infinite alternate}@keyframes dv{to{transform:translateY(-30px)}}
+.tx h3{background:linear-gradient(90deg,var(--or),#ffd36b,var(--or));background-size:200%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:sh2 4s linear infinite}@keyframes sh2{to{background-position:200%}}
+.tile.lit,.card{animation:fl 5s infinite}
 </style>
 </head>
 <body>
@@ -380,6 +383,7 @@ textarea{width:100%;height:270px;border-radius:16px;border:3px solid var(--or);b
   <h3 class="a">A linguagem mostra a realidade</h3>
   <p class="a">Rap, funk e grafite são o <b>jornal da quebrada</b>: denunciam desigualdade, preconceito e violência e afirmam o orgulho do território.</p>
   <p class="a">Quem estava calado <b class="mg">ganha voz</b>.</p>
+  <p class="a mk" style="font-size:44px;line-height:1.2;color:var(--or);--d:2.6s">Onde a cidade ergue muros, a quebrada constrói pontes.</p>
  </div>
  <svg viewBox="0 0 840 700">
   <defs><pattern id="br" width="120" height="60" patternUnits="userSpaceOnUse"><rect width="120" height="60" fill="#2a2433"/><path d="M0 0H120M0 30H120M60 0V30M0 30V60M120 30V60" stroke="#15111c" stroke-width="4"/></pattern></defs>
@@ -395,22 +399,9 @@ textarea{width:100%;height:270px;border-radius:16px;border:3px solid var(--or);b
 </div>
 </section>
 
-<!-- 6 CONCLUSÃO -->
-<section class="slide">
-<div class="hd"><h2>Conclusão</h2></div>
-<div class="m one">
- <div class="cards3">
-  <div class="card a"><svg class="ic"><use href="#laje"/></svg>Periferia é território de <b>desigualdade</b> — e também de <b>cultura e resistência</b>.</div>
-  <div class="card a" style="--d:1.2s"><svg class="ic"><use href="#wall"/></svg>Fronteiras culturais e segregação <b>limitam oportunidades</b>.</div>
-  <div class="card a" style="--d:2.2s"><svg class="ic"><use href="#book"/></svg>Educação, projetos sociais e cultura <b>abrem pontes</b>.</div>
- </div>
- <div class="fin a sp" style="--d:3.4s">Onde a cidade ergue <em>muros</em>,<br>a quebrada constrói <em>pontes</em>.</div>
-</div>
-</section>
-
 <!-- 7 Q1 -->
-<section class="slide" data-badge="Questão objetiva · marque X">
-<div class="hd"><h2>Questão 1</h2></div>
+<section class="slide" data-badge="Perguntas finais">
+<div class="hd"><h2>Perguntas</h2><div class="tabs"><span>1</span><span>2</span><span>3</span><span>4</span></div></div>
 <div class="m one">
  <div class="q" id="q1">
   <h3 class="a">Segundo o Censo 2022 do IBGE, qual é a porcentagem aproximada da população brasileira que vive em favelas e comunidades urbanas?</h3>
@@ -422,12 +413,6 @@ textarea{width:100%;height:270px;border-radius:16px;border:3px solid var(--or);b
   </div>
   <div class="gab"><span class="ok">✔ Acertou! </span><span class="no">✖ Quase! </span>Gabarito: <b>b)</b> — o Censo 2022 contou 16,4 milhões de moradores, 8,1% da população.</div>
  </div>
-</div>
-</section>
-
-<!-- 8 Q2 -->
-<section class="slide" data-badge="Questão objetiva · marque X">
-<div class="hd"><h2>Questão 2</h2></div>
 <div class="m one">
  <div class="q">
   <h3 class="a">No contexto do trabalho, o que são “fronteiras culturais”?</h3>
@@ -439,12 +424,6 @@ textarea{width:100%;height:270px;border-radius:16px;border:3px solid var(--or);b
   </div>
   <div class="gab"><span class="ok">✔ Acertou! </span><span class="no">✖ Quase! </span>Gabarito: <b>b)</b> — são limites simbólicos e sociais, não oficiais nem físicos.</div>
  </div>
-</div>
-</section>
-
-<!-- 9 Q3 -->
-<section class="slide" data-badge="Questão discursiva">
-<div class="hd"><h2>Questão 3</h2></div>
 <div class="m one">
  <div class="q">
   <h3 class="a">Explique, com suas palavras, como a educação e a cultura (rap, funk, grafite) podem ajudar a enfrentar a segregação e a violência que atingem os jovens da periferia.</h3>
@@ -452,12 +431,6 @@ textarea{width:100%;height:270px;border-radius:16px;border:3px solid var(--or);b
   <button class="btn a" id="mbtn">Ver resposta-modelo</button>
   <div class="mod" id="mod">A educação amplia as chances de estudo e trabalho, e projetos sociais criam espaços seguros de convivência. A cultura — rap, funk e grafite — transforma a vivência da periferia em voz própria: denuncia o preconceito e a desigualdade e fortalece o orgulho do território. Assim, derruba fronteiras simbólicas, reduz o estigma e abre pontes para o resto da cidade. Com oportunidade e voz, a segregação perde força, e a violência — consequência de desigualdades e da ausência de direitos — deixa de ser o único caminho visível.</div>
  </div>
-</div>
-</section>
-
-<!-- 10 REFERÊNCIAS -->
-<section class="slide">
-<div class="hd"><h2>Referências</h2></div>
 <div class="m one">
  <div class="refs">
   <p class="a">IBGE. <b>Censo Demográfico 2022</b>: favelas e comunidades urbanas. Rio de Janeiro: IBGE. <i class="v">[VERIFICAR ano]</i></p>
